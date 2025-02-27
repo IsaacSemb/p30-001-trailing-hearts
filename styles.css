@@ -40,3 +40,28 @@ span {
   
   }
   
+  /* creating our animation */
+
+@keyframes movingHearts{
+
+    /* start behavior */
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+
+        /* changeing its colur over time */
+        filter: hue-rotate(0);
+    } 
+
+    /* ending behavior */
+    100%{
+      /* set top to big number so as to make it disaappear from the screen */
+        transform: translate(-50%,-4000%);
+        opacity: 0;
+
+        /* changeing its colur over time */
+        filter: hue-rotate(720deg);
+
+
+    }
+}
