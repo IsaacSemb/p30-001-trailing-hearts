@@ -1,6 +1,3 @@
-
-
-
 body {
   margin: 0;
   padding: 0;
@@ -16,7 +13,6 @@ span {
 
   /* our image to animate, the heart icon */
   background: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-256.png");
-
 
   /* take the element out of the flow of the document */
   position: absolute;
@@ -38,59 +34,27 @@ span {
   /* adding our animation to the mix */
 
   animation: movingHearts 7s ease-out;
-
 }
-
 
 /* creating our animation */
 
-@keyframes movingHearts{
+@keyframes movingHearts {
+  /* start behavior */
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
 
-    /* start behavior */
-    0%{
-        transform: translate(-50%,-50%);
-        opacity: 1;
+    /* changeing its colur over time */
+    filter: hue-rotate(0);
+  }
 
-        /* changeing its colur over time */
-        filter: hue-rotate(0);
-    } 
+  /* ending behavior */
+  100% {
+    /* set top to big number so as to make it disaappear from the screen */
+    transform: translate(-50%, -4000%);
+    opacity: 0;
 
-    /* ending behavior */
-    100%{
-      /* set top to big number so as to make it disaappear from the screen */
-        transform: translate(-50%,-4000%);
-        opacity: 0;
-
-        /* changeing its colur over time */
-        filter: hue-rotate(720deg);
-
-
-    }
+    /* changeing its colur over time */
+    filter: hue-rotate(720deg);
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
