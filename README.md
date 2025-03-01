@@ -30,6 +30,7 @@ This project is a **JavaScript-based trailing hearts animation** that follows th
    ```
 3. **Open `index.html` in a browser** 🚀  
 
+---
 ## **Future Improvements**  
 🔹 Add a toggle button to enable/disable hearts.  
 🔹 Implement different shapes (stars, sparkles, etc.).  
